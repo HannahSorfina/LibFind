@@ -1,0 +1,948 @@
+
+/* =====================================
+   LIBFIND - LOGIN PAGE
+   Theme: Sky Blue & White
+===================================== */
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4faff;
+    color: #333;
+}
+
+/* Login Container */
+.login-container {
+    min-height: 100vh;
+}
+
+/* =====================================
+   LEFT WELCOME SECTION
+===================================== */
+
+.welcome-section {
+    background: linear-gradient(135deg, #8ed5f2, #4da8da);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 45px 35px;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Decorative Circles */
+.welcome-section::before {
+    content: "";
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.12);
+    top: -120px;
+    left: -100px;
+}
+
+.welcome-section::after {
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.10);
+    bottom: -100px;
+    right: -80px;
+}
+
+/* Welcome Content */
+.welcome-content {
+    width: 100%;
+    max-width: 520px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Welcome Heading */
+.welcome-title {
+    font-size: 38px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 18px;
+    line-height: 1.3;
+}
+
+/* System Name */
+.brand-tagline {
+    font-size: 17px;
+    letter-spacing: 0.3px;
+    margin-bottom: 35px;
+}
+
+/* Welcome Description */
+.welcome-description {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+/* =====================================
+   FEATURE CARDS
+===================================== */
+
+.feature-list {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.feature-icon {
+    width: 75px;
+    height: 75px;
+    background: rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    transition: 0.3s;
+}
+
+.feature-icon:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.35);
+}
+
+/* =====================================
+   RIGHT LOGIN SECTION
+===================================== */
+
+.login-section {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 25px;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Login Heading */
+.login-box h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #328dbb;
+    margin-bottom: 10px;
+}
+
+.login-subtitle {
+    color: #777;
+    margin-bottom: 35px;
+}
+
+/* =====================================
+   FORM STYLING
+===================================== */
+
+.form-label {
+    font-weight: 600;
+    color: #444;
+}
+
+.form-control {
+    padding: 12px;
+    border: 1px solid #d5e5ef;
+    border-radius: 8px;
+}
+
+.form-control:focus {
+    border-color: #4da8da;
+    box-shadow: 0 0 0 3px rgba(77, 168, 218, 0.15);
+}
+
+.form-check-input:checked {
+    background-color: #328dbb;
+    border-color: #328dbb;
+}
+
+/* =====================================
+   LOGIN BUTTON
+===================================== */
+
+.btn-login {
+    background-color: #328dbb;
+    color: white;
+    padding: 12px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    transition: 0.3s;
+}
+
+.btn-login:hover {
+    background-color: #2477a3;
+    color: white;
+}
+
+/* =====================================
+   DEMO LOGIN & FOOTER
+===================================== */
+
+.demo-text {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 13px;
+    color: #888;
+}
+
+.footer-text {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 12px;
+    color: #999;
+}
+
+/* =====================================
+   RESPONSIVE DESIGN
+===================================== */
+
+@media (max-width: 767px) {
+
+    /* Left Section */
+    .welcome-section {
+        padding: 40px 20px;
+    }
+
+    .welcome-title {
+        font-size: 28px;
+    }
+
+    .brand-tagline {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+
+    .welcome-description {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    /* Feature Cards */
+    .feature-list {
+        gap: 12px;
+    }
+
+    .feature-item {
+        font-size: 12px;
+    }
+
+    .feature-icon {
+        width: 65px;
+        height: 65px;
+        font-size: 26px;
+    }
+
+    /* Right Login Section */
+    .login-section {
+        padding: 45px 25px;
+    }
+
+    .login-box h2 {
+        font-size: 26px;
+    }
+
+}
+
+
+/* Password Show/Hide Button */
+.password-wrapper {
+    position: relative;
+}
+
+.password-wrapper .form-control {
+    padding-right: 55px;
+}
+
+/* Hide Edge's built-in eye icon */
+.password-wrapper input::-ms-reveal {
+    display: none;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.password-toggle:hover {
+    opacity: 0.7;
+}
+
+
+/* =====================================
+   LIBFIND DASHBOARD
+===================================== */
+
+/* Dashboard Body */
+.dashboard-page {
+    background-color: #f4faff;
+    min-height: 100vh;
+}
+
+/* Navigation Bar */
+.libfind-navbar {
+    background-color: #ffffff;
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.libfind-navbar .navbar-brand {
+    color: #328dbb;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.libfind-navbar .nav-link {
+    color: #555;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 5px;
+}
+
+.libfind-navbar .nav-link:hover,
+.libfind-navbar .nav-link.active {
+    color: #328dbb;
+}
+
+/* Logout Button */
+.btn-logout {
+    background-color: #328dbb;
+    color: white;
+    border-radius: 8px;
+    padding: 8px 20px;
+    font-size: 14px;
+}
+
+.btn-logout:hover {
+    background-color: #2477a3;
+    color: white;
+}
+
+/* Main Content */
+.dashboard-content {
+    padding-top: 45px;
+    padding-bottom: 40px;
+}
+
+/* Welcome Section */
+.dashboard-welcome {
+    background: linear-gradient(135deg, #8ed5f2, #4da8da);
+    padding: 35px;
+    border-radius: 15px;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.dashboard-welcome h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.dashboard-welcome p {
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+/* Section Headings */
+.dashboard-heading {
+    font-size: 22px;
+    font-weight: bold;
+    color: #328dbb;
+    margin-bottom: 22px;
+}
+
+/* Summary Cards */
+.summary-card {
+    padding: 30px 20px;
+    border-radius: 15px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+    height: 100%;
+}
+
+.summary-card:hover {
+    transform: translateY(-5px);
+}
+
+.summary-icon {
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.summary-card h3 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.summary-card p {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 0;
+}
+
+/* Card Colours */
+.lost-card {
+    border-top: 5px solid #4da8da;
+}
+
+.lost-card h3 {
+    color: #328dbb;
+}
+
+.found-card {
+    border-top: 5px solid #78c7c2;
+}
+
+.found-card h3 {
+    color: #329b94;
+}
+
+.returned-card {
+    border-top: 5px solid #a8a0df;
+}
+
+.returned-card h3 {
+    color: #8075c4;
+}
+
+/* Dashboard Panels */
+.dashboard-panel {
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Chart */
+.chart-container {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    height: 320px;
+    margin: 25px auto 0;
+}
+
+/* Table */
+.dashboard-panel .table th {
+    background-color: #eaf6fc;
+    color: #328dbb;
+    padding: 15px;
+}
+
+.dashboard-panel .table td {
+    padding: 15px;
+}
+
+/* Status Badges */
+.status-lost {
+    background-color: #ffe7e7;
+    color: #c34a4a;
+}
+
+.status-found {
+    background-color: #e1f7ef;
+    color: #27845c;
+}
+
+.status-returned {
+    background-color: #ece9fa;
+    color: #7468b6;
+}
+
+/* Footer */
+.dashboard-footer {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    color: #888;
+    font-size: 13px;
+    border-top: 1px solid #e5edf2;
+}
+
+.dashboard-footer p {
+    margin-bottom: 0;
+}
+
+/* =====================================
+   DASHBOARD RESPONSIVE DESIGN
+===================================== */
+
+@media (max-width: 767px) {
+
+    .dashboard-content {
+        padding-top: 25px;
+    }
+
+    .dashboard-welcome {
+        padding: 25px 20px;
+    }
+
+    .dashboard-welcome h1 {
+        font-size: 24px;
+    }
+
+    .dashboard-heading {
+        font-size: 20px;
+    }
+
+    .dashboard-panel {
+        padding: 20px;
+    }
+
+    .chart-container {
+        height: 260px;
+    }
+
+    .summary-card {
+        padding: 25px 15px;
+    }
+
+    .libfind-navbar .nav-link {
+        padding: 10px 0;
+    }
+
+    .btn-logout {
+        margin-top: 10px;
+    }
+}
+
+
+/* =====================================
+   LIBFIND - LOST ITEMS PAGE
+===================================== */
+
+/* Page Header */
+.items-header {
+    background: linear-gradient(135deg, #8ed5f2, #4da8da);
+    color: white;
+    padding: 35px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.items-header h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.items-header p {
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+/* Search and Filter Box */
+.items-filter-box {
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 35px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.items-filter-box .form-select {
+    padding: 12px;
+    border: 1px solid #d5e5ef;
+    border-radius: 8px;
+}
+
+.items-filter-box .form-select:focus {
+    border-color: #4da8da;
+    box-shadow: 0 0 0 3px rgba(77, 168, 218, 0.15);
+}
+
+/* Item Cards */
+.item-card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 100%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    transition: 0.3s;
+}
+
+.item-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Item Images */
+.item-image {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    background-color: #eaf6fc;
+}
+
+
+/* Item Information */
+.item-card-body {
+    padding: 22px;
+}
+
+.item-card-body h3 {
+    font-size: 19px;
+    font-weight: bold;
+    color: #328dbb;
+    margin-bottom: 12px;
+}
+
+.item-card-body p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 9px;
+}
+
+/* Status */
+.item-status {
+    display: inline-block;
+    background-color: #ffe7e7;
+    color: #c34a4a;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+/* View Details Button */
+.btn-details {
+    background-color: #328dbb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.btn-details:hover {
+    background-color: #2477a3;
+    color: white;
+}
+
+/* No Results */
+.no-results {
+    text-align: center;
+    background-color: white;
+    padding: 55px 20px;
+    border-radius: 15px;
+}
+
+.no-results h3 {
+    font-size: 22px;
+    color: #328dbb;
+    margin-bottom: 12px;
+}
+
+.no-results p {
+    color: #777;
+    margin-bottom: 0;
+}
+
+/* Modal */
+#itemDetailsModal .modal-header {
+    background-color: #eaf6fc;
+}
+
+#itemDetailsModal .modal-title {
+    color: #328dbb;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+
+    .items-header {
+        padding: 25px 20px;
+    }
+
+    .items-header h1 {
+        font-size: 24px;
+    }
+
+    .items-filter-box {
+        padding: 20px;
+    }
+
+    .item-image {
+        height: 180px;
+        font-size: 55px;
+    }
+
+    .item-card-body {
+        padding: 18px;
+    }
+}
+
+
+/* =====================================
+   LIBFIND - FOUND ITEMS PAGE
+===================================== */
+
+/* Found Status Badge */
+.found-item-status {
+    background-color: #e1f7ef;
+    color: #27845c;
+}
+
+/* Found Items Header */
+.found-page .items-header {
+    background: linear-gradient(135deg, #8ed5f2, #4da8da);
+}
+
+
+/* =====================================
+   LIBFIND - REPORT ITEM PAGE
+===================================== */
+
+/* Report Form Container */
+.report-form-box {
+    background-color: white;
+    padding: 35px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Form Labels */
+.report-page .form-label {
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+/* Form Inputs */
+.report-page .form-control,
+.report-page .form-select {
+    border: 1px solid #d5e5ef;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.report-page .form-control:focus,
+.report-page .form-select:focus {
+    border-color: #4da8da;
+    box-shadow: 0 0 0 3px rgba(77, 168, 218, 0.15);
+}
+
+/* Image Upload Area */
+.image-upload-box {
+    border: 2px dashed #b7dced;
+    background-color: #f4faff;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+}
+
+.upload-symbol {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.image-upload-box p {
+    color: #555;
+    margin-bottom: 18px;
+}
+
+/* Image Preview */
+.image-preview {
+    display: block;
+    max-width: 100%;
+    max-height: 250px;
+    margin: 0 auto;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+/* Submit Button */
+.btn-submit-report {
+    background-color: #328dbb;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.btn-submit-report:hover {
+    background-color: #2477a3;
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+
+    .report-form-box {
+        padding: 22px;
+    }
+
+    .image-upload-box {
+        padding: 20px;
+    }
+
+    .btn-submit-report {
+        width: 100%;
+    }
+}
+
+
+/* =====================================
+   LIBFIND - MY REPORTS PAGE
+===================================== */
+
+/* Summary Cards */
+.my-report-summary {
+    background-color: white;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    border-top: 4px solid #4da8da;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.my-report-summary h3 {
+    color: #328dbb;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.my-report-summary p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+/* My Report Card */
+.my-report-card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 100%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.my-report-card .item-image {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+/* Action Buttons */
+.my-report-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.my-report-actions .btn {
+    flex: 1;
+    font-size: 13px;
+    padding: 9px;
+}
+
+.btn-returned {
+    background-color: #27845c;
+    color: white;
+}
+
+.btn-returned:hover {
+    background-color: #1d6948;
+    color: white;
+}
+
+/* Status Colours */
+.my-status-lost {
+    background-color: #ffe7e7;
+    color: #c34a4a;
+}
+
+.my-status-found {
+    background-color: #e1f7ef;
+    color: #27845c;
+}
+
+.my-status-returned {
+    background-color: #ece9fa;
+    color: #7468b6;
+}
+
+.my-report-status {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+    .my-report-summary {
+        padding: 20px;
+    }
+
+    .my-report-actions {
+        flex-direction: column;
+    }
+}
+
+
+/* Recent Reports Scrollable Table */
+.recent-reports-scroll {
+    max-height: 350px;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+/* Keep table header visible when scrolling */
+.recent-reports-scroll thead th {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: #eaf6fc;
+}
+
+
