@@ -1,74 +1,115 @@
-# LibFind - Library Lost and Found Management System
+LibFind - Library Lost and Found Management System
+A responsive web application prototype for managing lost and found belongings in a library. LibFind provides a simple interface for users to browse lost and found items, submit reports, and keep track of their reported belongings.
 
-## Project Overview
-LibFind is a web-based Library Lost and Found Management System developed to help library users report and search for lost or found belongings. The system provides a simple and user-friendly interface for managing item reports.
+Course: IMS566 - Advanced Web Design Development and Content Management
+Assignment: Individual Project
+Author: HANNAH SORFINA BINTI MAIZUL JAZMI
+Matric No: 2026128131
+Submission: Week 9
 
-This project was developed as an individual assignment for IMS566 using HTML, CSS, JavaScript, and Bootstrap 5.
+Project Description
+LibFind is a web-based Library Lost and Found Management System designed to help library users report missing belongings and find items that have been discovered in the library. It brings lost-item listings, found-item listings, and report management into one interface.
+The project is built with HTML, CSS, JavaScript, and Bootstrap 5. Item reports and status updates are stored in the browser using Local Storage, so the prototype does not require a backend server or database.
 
-## Technologies Used
-- HTML5
-- CSS3
-- JavaScript
-- Bootstrap 5
-- Chart.js
-- Browser Local Storage
-- GitHub Pages
+Features
+1. Login Page
+•	Simulated login using predefined demo credentials.
+•	Displays an error message when invalid credentials are entered.
+•	Show/hide password feature.
 
-## System Features
+2. Dashboard
+•	Displays summary statistics for Lost, Found, and Returned items.
+•	Includes a chart to visualize item statuses.
+•	Displays recent item reports.
 
-### 1. Login Page
-- Simulated login using predefined credentials.
-- Displays an error message for invalid login attempts.
-- Provides a show/hide password feature.
+3. Lost Items
+•	Displays reported lost belongings with images and descriptions.
+•	Search and filter items by category.
+•	View item details.
 
-### 2. Dashboard
-- Displays summary statistics for Lost, Found, and Returned items.
-- Includes a chart for item status visualization.
-- Shows recent item reports.
+4. Found Items
+•	Displays belongings found in the library.
+•	Search and filter found items.
+•	View item details and status information.
 
-### 3. Lost Items
-- Displays reported lost belongings with images and descriptions.
-- Allows users to search and filter items by category.
-- Provides detailed item information.
+5. Report Item
+•	Submit a new Lost or Found report.
+•	Enter item information, including name, category, location, date, and description.
+•	Upload an optional item image.
 
-### 4. Found Items
-- Displays belongings found in the library.
-- Allows users to search and filter found items.
-- Provides item details and status information.
+6. My Reports
+•	View reports submitted by the user.
+•	Search and filter reports.
+•	View report details, mark items as returned, and delete reports.
 
-### 5. Report Item
-- Allows users to submit new Lost or Found reports.
-- Collects item details such as name, category, location, date, and description.
-- Supports optional image uploads.
+7. Responsive Navigation and Layout
+•	Navigation links connect the main system pages.
+•	Responsive layout supports desktop and mobile screen sizes.
 
-### 6. My Reports
-- Displays reports submitted by the user.
-- Allows users to search and filter their reports.
-- Supports viewing details, marking items as returned, and deleting reports.
+Demo Login
+Field	Value
+Username:	student
+Password: libfind123
 
-## Demo Login
-Username: `student`
+How to Test Login
+1.	Open the LibFind live website.
+2.	Enter the demo username and password listed above.
+3.	Click Login.
+4.	After successful login, the Dashboard will be displayed.
+5.	To test error handling, enter an incorrect username or password and check the error message.
 
-Password: `libfind123`
+How to Use
+1.	Log in to LibFind using the demo credentials.
+2.	View the item summary and chart on the Dashboard.
+3.	Browse Lost Items to find listings of missing belongings.
+4.	Browse Found Items to view belongings found in the library.
+5.	Use Report Item to submit a new lost or found report.
+6.	Open My Reports to review or manage reports you submitted.
+7.	Log out when finished.
 
-## How to Use
-1. Open the LibFind website.
-2. Log in using the demo credentials.
-3. View item statistics on the Dashboard.
-4. Browse the Lost Items and Found Items pages.
-5. Use the Report Item page to submit a new report.
-6. Open My Reports to view or manage submitted reports.
-7. Log out after using the system.
+Frameworks and Libraries Used
+Technology	Purpose
+HTML5	Page structure and content
+CSS3	Custom styling and layout
+JavaScript	Interactivity, form handling, and system functionality
+Bootstrap 5	Responsive layout and UI components
+Chart.js	Dashboard data visualization
+Browser Local Storage	Saving reports and status updates in the browser
+GitHub Pages	Hosting and deployment
 
-## Data Storage
-LibFind uses browser Local Storage to save item reports and status changes. The system does not require a backend server or database.
+Data Storage
+LibFind uses the browser's Local Storage to save item reports and status changes. No backend server or database is required for this prototype.
 
-Data is stored separately in each browser and is not shared between different users or devices.
+Project Structure
+LibFind/
+├── index.html
+├── dashboard.html
+├── lost-items.html
+├── found-items.html
+├── report-item.html
+├── my-reports.html
+├── README.md
+├── css/
+│   └── style.css
+├── js/
+│   ├── auth.js
+│   ├── app.js
+│   └── dashboard.js
+└── images/
 
-## Project Deployment
-The website is hosted using GitHub Pages.
 
+Deployment (GitHub Pages)
+1.	Push the project files to the GitHub repository.
+2.	Open the repository Settings.
+3.	Select Pages from the sidebar.
+4.	Under Build and deployment, select deployment from the main branch and the root folder.
+5.	Save the settings and wait for GitHub Pages to publish the site.
+Repository: https://github.com/HannahSorfina/LibFind
 Live Website: https://hannahsorfina.github.io/LibFind/
 
-## Project Purpose
-This project demonstrates the development of a responsive, interactive web application for managing library lost and found items using frontend web technologies.
+Project Purpose
+This project demonstrates the design and development of a responsive web application interface for a library lost and found system, applying web design, navigation, content organization, authentication simulation, and data visualization concepts.
+
+License
+This project is created for academic purposes as part of the IMS566 individual assignment.
+© 2026 LibFind. All rights reserved.
