@@ -1,11 +1,11 @@
-# LibFind — Library Lost and Found Management System
+# LibFind - Library Lost and Found Management System
 
 A responsive web application prototype for managing lost
 and found belongings in a library. LibFind provides a
 simple interface for users to browse lost and found items,
 submit reports, and keep track of their reported belongings.
 
-> **Course:** IMS566 — Advanced Web Design Development
+> **Course:** IMS566 - Advanced Web Design Development
 > and Content Management
 > **Assignment:** Individual Project
 > **Author:** HANNAH SORFINA BINTI MAIZUL JAZMI
